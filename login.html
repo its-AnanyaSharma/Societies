@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="../homepage/home.html"> -->
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<style>
+    @media (min-width:400px) and (max-width:450px) {
+        #box{
+            height: 300px;
+            width: 300px;
+        }
+        .form{
+            height: 190px;
+            width: 265px;
+        }   
+    }
+    @media (min-width:250px) and (max-width:400px) {
+        #box{
+            height: 300px;
+            width: 175px;
+        }
+        .form{
+            height: 190px;
+            width: 145px;
+        }   
+        .form input{
+            height:auto;
+            width: auto;
+        }
+    }
+    @media (min-width:180px) and (max-width:250px) {
+        #box {
+            height: 300px;
+            width: 122px;
+        }
+        .form{
+            height: 190px;
+            width: 100px;
+        }   
+        .form input{
+            height:20px;
+            width: 80px;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+input{
+    height:50px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    }
+</style>
+<body>
+    <div id="full"></div>
+        
+        <div id="box">
+            <h1 style="margin: 5px;">Login</h1>
+            <div class="form">
+            <form class="form" action="backend.php">
+            <input type="number" name="Enrollment No." placeholder="Enter college Email ID " required >
+            <!-- <span class="icon">
+                <ion-icon name="school-outline"></ion-icon>
+            </span> -->
+            
+            <input type="password" name="current-password" placeholder="Enter password" required >
+            <!-- <span class="icon">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </span> -->
+            <a href="../login/signup.html">signup</a>
+            <button class="btn" type="submit"><a href="../homepage/home.html">Login</a>
+            </button>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+</html>
